@@ -1,0 +1,31 @@
+# Fiche d'identité du package maintai : lue par pip install et par python -m build
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "maintai"
+dynamic = ["version"]  # lue dans maintai/__init__.py (voir plus bas)
+description = "Prédiction de panne d'équipements industriels à partir de relevés de capteurs."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.0",
+    "pandas>=2.2",
+    "scikit-learn>=1.7",
+    "joblib>=1.4",
+]
+
+[project.optional-dependencies]
+api = ["fastapi>=0.115", "uvicorn[standard]>=0.30"]
+ui = ["streamlit>=1.40"]
+dev = ["pytest>=8", "ruff"]
+
+[project.scripts]
+maintai-predict = "maintai.cli:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "maintai.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["maintai*"]  # seul le dossier maintai/ entre dans le package
