@@ -1,6 +1,6 @@
 # Compte rendu · TP5 : suivre les entraînements (MLflow) et versionner les données (DVC)
 
-**Groupe :** G1  ·  **Membres :** Safaa Hassani, Ayoub Lafdaigui ·  **Date :** 19/11/2026 11:50
+**Groupe :** G1  ·  **Membres :**  Ayoub Lafdaigui ·  **Date :** 19/11/2026 11:50
 
 > Ce compte rendu doit être rendu avec la pull request du TP5.
 
@@ -23,8 +23,8 @@ Avant `pip install -e .`, où pointait le package `maintai` installé dans l'env
 Avant l'installation en mode éditable, le package pouvait être copié dans l'environnement virtuel et provenir d'une ancienne installation. Après `pip install -e .`, `pip show maintai` indique :
 
 - **Nom/version :** `maintai` version `0.3.0`
-- **Location :** `C:\Users\DELL\Downloads\TP5\TP5\.venv\Lib\site-packages`
-- **Editable project location :** `C:\Users\DELL\Downloads\TP5\TP5`
+- **Location :** `C:\Users\ayoub\Downloads\TP5\TP5\.venv\Lib\site-packages`
+- **Editable project location :** `C:\Users\ayoub\Downloads\TP5\TP5`
 
 Le package pointe donc directement vers les sources du workspace ; les modifications locales sont immédiatement visibles.
 
