@@ -157,7 +157,7 @@ ADR détaillé : [docs/adr/005-image-docker.md](docs/adr/005-image-docker.md).
 ## 8. Le rendu Git
 
 - Lien de la pull request : https://github.com/co0kayn/Projet_dev_mob_G7/pull/1
-- Le tag `tp6` existe sur GitHub : non; il reste à créer après la fusion de la pull request.
+- Le tag `tp6` existe sur GitHub et pointe vers le commit fusionné de la pull request.
 - `.env`, `models/` et `data/*.csv` n'ont pas été ajoutés; le commit contient uniquement les cinq livrables demandés.
 
 ## 9. Ce qui reste flou
