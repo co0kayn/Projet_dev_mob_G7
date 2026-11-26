@@ -1,0 +1,19 @@
+# Ce qui n'entre jamais dans l'image : lourd, local ou secret
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.git/
+dist/
+build/
+*.egg-info/
+tests/
+# TODO TP6 sprint 1 : ajoutez une ligne pour chacun
+#   les données (data/), le modèle (models/), le secret (.env),
+#   la base et les fichiers MLflow (mlflow.db, mlruns/), le cache DVC (.dvc/)
+data/
+models/
+.env
+mlflow.db
+mlruns/
+.dvc/
