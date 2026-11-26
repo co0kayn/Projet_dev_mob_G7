@@ -156,9 +156,9 @@ ADR détaillé : [docs/adr/005-image-docker.md](docs/adr/005-image-docker.md).
 
 ## 8. Le rendu Git
 
-- Lien de la pull request : non créé; ce dossier n'est pas dans un dépôt Git.
-- Le tag `tp6` existe sur GitHub : non vérifiable; aucun dépôt distant n'est configuré ici.
-- `.env`, `models/` et `data/*.csv` sont listés dans `.gitignore`; toutefois, `git status` avant commit n'est pas disponible sans dépôt Git.
+- Lien de la pull request : https://github.com/co0kayn/Projet_dev_mob_G7/pull/1
+- Le tag `tp6` existe sur GitHub : non; il reste à créer après la fusion de la pull request.
+- `.env`, `models/` et `data/*.csv` n'ont pas été ajoutés; le commit contient uniquement les cinq livrables demandés.
 
 ## 9. Ce qui reste flou
 
