@@ -1,0 +1,25 @@
+# MaintAI en deux conteneurs : l'API et l'interface Streamlit.
+# Lancer : docker compose up --build      Arrêter : docker compose down
+
+services:
+  api:
+    build: .
+    image: maintai:0.4.0
+    env_file: .env                     # MAINTAI_API_KEY, comme au TP2
+    ports:
+      - "8000:8000"                    # PC:conteneur
+    volumes:
+      - ./models:/app/models:ro        # le modèle arrive par volume, en lecture seule
+
+  ui:
+    image: maintai:0.4.0               # même image, autre commande
+    command: ["python", "-m", "streamlit", "run", "ui/app.py",
+              "--server.address=0.0.0.0", "--server.port=8501", "--server.headless=true"]
+    environment:
+      MAINTAI_API_URL: http://api:8000 # nom du service Compose, pas localhost
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data:ro
+    depends_on:
+      - api
