@@ -201,9 +201,14 @@ modèle ne part avec une image partagée.
 
 #### 8. Le rendu Git
 
-- Lien de la pull request : …
-- Le tag `tp6` existe sur GitHub : oui / non
-- `git status` avant le commit : `.env`, `models/` ou `data/*.csv` apparaissaient-ils ? oui / non
+- Dépôt du groupe : https://github.com/co0kayn/Projet_dev_mob_G7 · mon dossier : `TP6/abderrahman erritouni`
+  (branche `tp6-abderrahman-erritouni`)
+- Lien de la pull request : à ajouter dès qu'elle est ouverte (le compte `abdoerri` n'a pas encore les droits
+  d'écriture sur le dépôt)
+- Le tag `tp6` existe sur GitHub : oui
+- `git status` avant le commit : `.env`, `models/` ou `data/*.csv` apparaissaient-ils ? non : ils sont exclus par
+  `.gitignore`, et seuls `COMPTE_RENDU.md`, `Dockerfile`, `.dockerignore`, `compose.yaml`, l'ADR 005 et
+  `TP6_COMPLET.md` ont été ajoutés
 
 #### 9. Ce qui reste flou
 
